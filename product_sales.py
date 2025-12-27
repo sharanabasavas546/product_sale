@@ -1,4 +1,9 @@
-def process_sales(product, quantity):
+from datetime import datetime
+
+# global sales record
+sales = []
+
+def process_sale(product, quantity):
     if quantity <= product["stock"]:
         total = product["price"] * quantity
         product["stock"] -= quantity
