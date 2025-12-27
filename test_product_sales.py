@@ -1,6 +1,6 @@
 import product_sales
 
-def test_successful_sale():
+def test_product_sale():
     product = {"id": 10, "name": "Tablet", "price": 20000, "stock": 5}
     
     total = product_sales.process_sale(product, 2)
